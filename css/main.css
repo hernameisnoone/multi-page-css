@@ -1,0 +1,108 @@
+  body {
+    background: #333;
+    color: #ddd;
+    font-family: sans-serif;
+  }
+
+  .nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .nav li {
+    display: inline-block;
+  }
+
+  .nav a {
+    color: #ddd;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+  }
+
+  .nav a:hover {
+    color: #d43e05;
+    background-color: #ddd;
+  }
+
+  @media screen and (min-width: 600px) {
+
+    body {
+      background-color: ddd;
+    }
+
+    .nav, .main-content {
+      float: left;
+    }
+
+    .nav {
+      width: 30%;
+    }
+
+    .nav .center {
+      width: 100;
+    }
+
+    .nav ul {
+      text-align: left;
+    }
+
+    .nav li {
+      display: block;
+    }
+
+    .main-content {
+      width: 70%;
+    }
+  }
+
+  .center {
+    margin: 0 auto;
+    max-width: 1440px
+    width: 80%
+  }
+
+  .content *;first-child {
+    margin-top: 0;
+  }
+
+  .content *;last-child {
+    margin-bottom: 0;
+  }
+
+.section {
+  padding: 40px 0;
+}
+
+.intro.section {
+  background-color: #d43e05;
+}
+
+.about.section {
+  background-color: #3d3d3d;
+}
+
+.about.section .column {
+  background-color: #d3d3d3;
+  color: #333;
+  float: left;
+  padding: 20px;
+  width: 100%;
+}
+
+.about.section .column + .column {
+  margin-top: 20px;
+}
+
+/* no semicolon or it will break */
+@media screen and (min-width: 900px) {
+  .about.section .column {
+    width: 30%;
+  }
+  .about.section .column + .column {
+    margin-left: 5%;
+    margin-top: 0;
+  }
+}
